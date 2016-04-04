@@ -1,0 +1,232 @@
+body {
+	height: 100%;
+	/* 	background: url("../../assets/students.jpg") no-repeat center center fixed; */
+	/* 	-webkit-background-size: cover; */
+	/* 	-moz-background-size: cover; */
+	/* 	-o-background-size: cover; */
+	/* 	background-size: cover; */
+}
+
+.fixedElement {
+	background-color: #c0c0c0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#first {
+	padding-top: 50px;
+	height: 100vh;
+	color: #fff;
+	background: url("../../assets/industry.jpg") no-repeat center center;
+	background-size: 100%;
+}
+
+#second {
+	padding-top: 50px;
+	height: 100vh;
+	color: #fff;
+	background: url("../../assets/hive.jpg") no-repeat center
+		center;
+	background-size: 100%;
+}
+
+.inner {
+	position: relative;
+	min-height: 100%;
+	min-width: 100%;
+	bottom: 25px;
+/* 	background-color: #FFF; */
+	background-color:rgba(255,255,255,.8);
+}
+
+.inner-content{
+/* 	z-index: -1; */
+/* 	opacity: 1; */
+}
+
+#third {
+	padding-top: 50px;
+	height: 100vh;
+	color: #fff;
+/* 	background-color: #3bc555; */
+}
+
+.box {
+	width: 300px;
+	height: 200px;
+	box-shadow: 5px 5px 3px #888888;
+	
+	
+	 -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+
+/* box-shadow: */
+/*     1px 1px 0 0 #888888, */
+/*     2px 2px 0 0 #888888, */
+/*     3px 3px 0 0 #888888, */
+/*     4px 4px 0 0 #888888, */
+/*     5px 5px 5px 0 #000000; */
+}
+
+.box:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.box:active {
+	box-shadow: 1px 1px 5px 0 #000000;
+	-webkit-box-shadow: 1px 1px 5px 0 #000000;
+	-moz-box-shadow: 1px 1px 5px 0 #000000;
+	top: 4px;
+	left: 4px;
+}
+
+.box .fa,.box .desc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.btmBox {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #FFF;
+}
+
+.expand {
+/* 	width: 100vh; */
+/* 	height: 100vh; */
+width: 400px;
+height: 300px;
+}
+
+#schoolComputing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 6%;
+	margin-left: 1%;
+}
+
+#schoolComputing>.box {
+	background: #FDD030;
+}
+
+#schoolBusiness {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 4%;
+}
+
+#schoolBusiness>.box {
+	background: #EB2543;
+}
+
+#schoolDesign {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 1%;
+	margin-bottom: 2%;
+}
+
+#schoolDesign>.box {
+	background: #1EAFEC;
+}
+
+#nextSection {
+	position:absolute;
+    bottom:10px;
+    right:25%;
+    left:50%;
+}
+
+#sticky.stick {
+	margin-top: 0 !important;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+
+#motto {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+
+#motto h3 {
+	font-size: 3.2em;
+	font-family: "LatoHeavy", "Helvetica", "Verdana", "sans-serif";
+	font-weight: 700;
+	color: #014FB3;
+	text-shadow: 1px 2px #888888;
+}
+
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+/*     margin-left: 30px; */
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 10px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 10px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+

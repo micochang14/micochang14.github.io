@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+.body-container {
+	background-color: #fff;
+	min-height: 100%;
+	height: 100%;
+}
+
+.school-title {
+	text-align: center;
+}
+
+.courses {
+	text-align: center;
+}
+
+.box {
+	width: 400px;
+	height: 400px;
+/* 	box-shadow: 5px 5px 3px #888888; */
+	border: 1px solid black;
+}
